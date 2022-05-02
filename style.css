@@ -1,0 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.square {
+    border: 1px solid black;
+    height: 22px;
+    width: 22px;
+}
+
+.container {
+    box-sizing: content-box;
+    display: flex;
+    width: 352px;
+    height: 352px;
+    flex-wrap: wrap;
+    border: 10px solid red;
+}
