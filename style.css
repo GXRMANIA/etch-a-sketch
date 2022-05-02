@@ -2,12 +2,24 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0a3bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
 }
 
 .square {
     border: 1px solid black;
     height: 22px;
     width: 22px;
+    background-color: #397754;
 }
 
 .container {
@@ -16,5 +28,25 @@
     width: 352px;
     height: 352px;
     flex-wrap: wrap;
-    border: 10px solid red;
+    border: 10px solid #9b45b2;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    width: 180px;
+    background: #9b45b2;
+    border: none;
+    color:#ebc340;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ebc340;
+    color:#9b45b2;
 }

@@ -7,7 +7,7 @@ function createSquares(num) {
         square.classList.add("square")
     
         square.addEventListener("mouseover", (e) => {
-            e.target.style.cssText += "background-color: blue;"
+            e.target.style.cssText += "background-color: #ebc340;"
         })
 
         container.appendChild(square)
@@ -36,6 +36,15 @@ changeSizeBtn.addEventListener("click", () => {
     deleteSquares();
     createSquares(newSize)
     changeSizeOfSquares();
+})
+
+const clearSquaresBtn = document.querySelector(".clearSquares");
+clearSquaresBtn.addEventListener("click", () => {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+        square.style.cssText += "background-color: #397754;";
+
+    })
 })
 
 
